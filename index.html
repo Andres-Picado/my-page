@@ -3,18 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #4fb3f5;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 100px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #000;
+        margin: 10px 0;
+    }
+
+    a.button-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #231eb0;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    a.button-link:hover {
+        background-color: #882177;
+    }
+
+    button {
+        padding: 10px 15px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #882177;
+    }
+
+    ol, ul {
+        margin-left: 20px;
+        color: #000;
+    }
+
+    form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        max-width: 400px;
+        margin: 20px auto;
+    }
+
+    form p {
+        margin: 10px 0 5px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"],
+    input[type="file"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .tarjeta-producto {
+        width: 300px;
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin: 20px auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .tarjeta-producto h2 {
+        margin-top: 10px;
+        color: #333;
+    }
+
+    .tarjeta-producto p {
+        margin: 5px 0;
+    }
+
+    .tarjeta-producto .btn-comprar {
+        display: block;
+        text-align: center;
+        background-color: #007BFF;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .tarjeta-producto .btn-comprar:hover {
+        background-color: #882177;
+    }
+</style>
+
     <title>My First Website</title>
 </head>
 <body>
-    <h1 style="text-align: center">Welcome to my page</h1>
-    <p>This is my first paragraph</p>
-    <p>Testing some stuff</p>
+    <h1> Welcome to my page </h1>
+    <p>This is my first paragraph, and I am practicing creating a new website and testing my skills, where I will learn new informaton
+        and practice what I have already know. </p>
+    <p>Testing some stuff.</p>
     
-   <a href= "https://www.lavanguardia.com/files/content_image_mobile_filter/uploads/2017/04/23/5fa3cf46da97d.jpeg" 
+   <a href= "https://upload.wikimedia.org/wikipedia/commons/b/bd/Test.svg" 
       target="_blank"> 
         
         <img 
-            src="ball.png" 
+            src="Google.png" 
             alt="ball" 
             width="200"
             height="200"
@@ -22,9 +138,9 @@
     </a>
     <p></p>
 
-    <a href="https://www.google.com/" target="_blank" title= "This is test" style="padding: 10px 20px; 
-    background-color: #231eb0; color: white; text-decoration: none; border-radius: 5px; font-weight: bold">
-    Google Page
+    <a href="https://www.google.com/" target="_blank" title= "This is test"
+        class= "button-link">
+        Google Page
     </a>
     
     <ol>
@@ -72,17 +188,17 @@
 
     </form>
 
-    <div class="tarjeta-producto" style="width: 300px; border: 1px solid #ddd; padding: 15px; margin: 10px;">
+    <div class="tarjeta-producto">
     
     <img src="ball.png" alt="Imagen del producto" style="width: 100%; height: auto;">
     
-    <h3 style="margin-top: 10px;">Soccer Training</h3>
+    <h2 style="margin-top: 10px;">Soccer Training</h2>
     
     <p style="color: #FF5733; font-weight: bold;">Price: $99 USD</p>
-    <p>Learn how to play socccer in 30 days.</p>
+    <p>Learn how to play soccer in 30 days.</p>
     
     <a href="https://upload.wikimedia.org/wikipedia/commons/b/bd/Test.svg" target="_blank"
-        class="btn-comprar" style="display: block; text-align: center; background-color: #007BFF; color: white; padding: 10px; text-decoration: none;">
+        class="btn-comprar">
         ¡Enroll now!
     </a>
     
@@ -90,4 +206,3 @@
 </body>
 
 </html>
-
